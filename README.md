@@ -274,6 +274,11 @@ After the sample interval of 30 seconds occurs then another payload is received 
 
 Subscribing to Model Driven Telemetry in YANG Suite is a good start to validating that the data expected is received from the API. This is useful when building additional charts and graphs in other tooling systems. The recommended tooling is **Telegraf from InfluxDB** or the [Cisco Telemetry Broker](https://cs.co/telemetrybroker) available from Cisco Security
 
+Additional details of the POE telemetry usecase is available from the [Github jeremycohoe cisco-mdt-poe](https://github.com/jeremycohoe/cisco-mdt-poe) Github repository where the data is collected into the time-series database and power use is vizualized over time in the Grafana tool
+
+![POE Grafana Dashboard](image-30.png)
+
+
 # gNOI Overview
 gNOI, or the gRPC Network Operations Interface, is defined by proto files and enables operational workflows. The supported gNOI "protos" are cert.proto, reset.proto, and os.proto. These gNOI workflow API's handle TLS certificate installation and management including for gNOI bootstrapping, performing factory resets including zero-fill of all device disks, and for upgrading or downgrading the version of the running operating system.
 
